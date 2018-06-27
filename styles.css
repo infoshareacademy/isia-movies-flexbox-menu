@@ -25,9 +25,15 @@ html, body{
     margin: 0;
     padding: 0;
     list-style: none;
+    overflow: hidden;
+    transition: height 0.5 ease-in-out;
 }
 
-.menu__logo, .menu__list-item{
+.menu__list--collapsed{
+    height: 0;
+}
+
+.menu__logo, .menu__toggle, .menu__list-item{
     display: flex;
     justify-content: center;
     align-items: center;
