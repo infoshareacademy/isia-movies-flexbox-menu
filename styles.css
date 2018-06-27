@@ -14,6 +14,10 @@ html, body{
     background-color: #9E9E9E;
 }
 
+.menu__content-offset{
+    padding-top: 50px;
+}
+
 .menu__logo{
     flex-grow: 1;
 }
@@ -29,10 +33,6 @@ html, body{
     transition: max-height 0.5s ease-in-out;
 }
 
-.menu__list--collapsed{
-    max-height: 0px !important;
-}
-
 .menu__logo, .menu__toggle, .menu__list-item{
     display: flex;
     justify-content: center;
@@ -41,6 +41,10 @@ html, body{
     color: #fff;
     text-decoration: none;
     height: 50px;
+}
+
+.menu__toggle{
+    display: none;
 }
 
 .menu__list-item{
@@ -60,5 +64,17 @@ html, body{
 @media (max-width: 798px){
     .menu, .menu__list{
         flex-direction: column;
-    }   
+    }
+
+    .menu__toggle{
+        display: flex;
+    }
+
+    .menu__content-offset{
+        padding-top: 100px;
+    }  
+
+    .menu__list--collapsed{
+        max-height: 0px !important;
+    }
 }
