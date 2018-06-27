@@ -6,7 +6,12 @@ html, body{
 .menu{
     display: flex;
 
-    background-color: #9E9E9E
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    
+    background-color: #9E9E9E;
 }
 
 .menu__logo{
