@@ -26,11 +26,11 @@ html, body{
     padding: 0;
     list-style: none;
     overflow: hidden;
-    transition: height 0.5 ease-in-out;
+    transition: max-height 0.5s ease-in-out;
 }
 
 .menu__list--collapsed{
-    height: 0;
+    max-height: 0px !important;
 }
 
 .menu__logo, .menu__toggle, .menu__list-item{
